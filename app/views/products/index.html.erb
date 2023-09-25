@@ -2,7 +2,7 @@
 
 <% @products.each do |product| %>
   <div>
-    <%= link_to product_path(product.id) do %>
+    <%= link_to product_path(product.id), class: 'product' do %>
       <h2><%= product.title %></h2>
       <span><%= product.price %></span>
     <% end %>
