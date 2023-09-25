@@ -21,6 +21,6 @@
 <div>
   <%= link_to 'Eliminar producto', product_path(@product), data: {
     turbo_method: :delete,
-    turbo_confirm: '¿Estás seguro de que quieres eliminar este producto?'
+    turbo_confirm: t('common.confirm')
     } %>
 </div>
