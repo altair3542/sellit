@@ -3,6 +3,7 @@
 <% @products.each do |product| %>
   <div>
     <%= link_to product_path(product.id), class: 'product' do %>
+      <%= image_tag product.photo, width: 100 if product.photo.attached? %>
       <h2><%= product.title %></h2>
       <span><%= product.price %></span>
     <% end %>
