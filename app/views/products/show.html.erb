@@ -13,3 +13,10 @@
 <div>
   <%= link_to 'Editar producto', edit_product_path(@product) %>
 </div>
+
+<div>
+  <%= link_to 'Eliminar producto', product_path(@product), data: {
+    turbo_method: :delete,
+    turbo_confirm: '¿Estás seguro de que quieres eliminar este producto?'
+    } %>
+</div>

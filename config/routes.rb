@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  delete '/products/:id', to: 'products#destroy', as: :destroy_product
   patch '/products/:id', to: 'products#update'
   post '/products', to: 'products#create'
   get '/products/new', to: 'products#new', as: :new_product
