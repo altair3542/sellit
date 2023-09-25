@@ -22,5 +22,8 @@ module Sellit
     config.i18n.available_locales = [:en, :es]
     # set default language
     config.i18n.default_locale = :es
+
+    # allow multiquery
+    config.active_record.async_query_executor = :global_thread_pool
   end
 end
