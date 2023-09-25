@@ -5,7 +5,13 @@ class Product < ApplicationRecord
     description: 'B'
   }
 
-  
+  ORDER_BY = order_by = {
+    newest: 'created_at DESC',
+    expensive: 'price DESC',
+    cheapest: 'price ASC'
+  }
+
+
   has_one_attached :photo
   validates :title, :description, :price, presence: true
   belongs_to :category
