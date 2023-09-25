@@ -1,0 +1,16 @@
+<h2>Añadir un nuevo producto</h2>
+
+<%= form_with model: @product do |form| %>
+  <div>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+  <div>
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+  </div>
+<% end %>
