@@ -29,6 +29,7 @@ en:
       login: 'Login'
       logout: 'Logout'
       register: 'Register'
+      categories: 'Categories'
   authentication:
     users:
       create:
