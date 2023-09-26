@@ -10,7 +10,7 @@ class User < ApplicationRecord
   validates :username, presence: true, uniqueness: true,
     length: { in: 3..15 },
     format: {
-      with: /\A[a-z-A-Z-0-9]+\z/,
+      with: /\A[a-zA-Z0-9]+\z/,
       message: :invalid
     }
 
