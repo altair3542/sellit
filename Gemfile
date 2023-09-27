@@ -48,6 +48,8 @@ gem "pg_search", "~> 2.3"
 #pagination
 gem "pagy", "~> 6.0"
 
+# tailwind css
+gem "tailwindcss-rails", "~> 2.0"
 # Use Sass to process CSS
 # gem "sassc-rails"
 
