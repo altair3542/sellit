@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= t('app_name') %> | <%= t('meta_title') %> </title>
+    <title><%= t('app_name') %> | <%= t('meta_title') %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,9 +11,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class='bg-gray-200'>
+  <body class="bg-gray-200">
     <%= render 'shared/flash' %>
-    <%= render "shared/header" %>
-    <%= yield %>
+    <%= render 'shared/header' %>
+    <div class="lg:container lg:mx-auto">
+      <%= yield %>
+    </div>
   </body>
 </html>
