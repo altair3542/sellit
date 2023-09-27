@@ -4,6 +4,7 @@
   <% end %>
 
   <%= link_to t('.add'), new_product_path if Current.user %>
+  <%= link_to t('.favorites'), favorites_path if Current.user %>
   <%= link_to t('.categories'), categories_path if Current.user&.admin? %>
   <%= link_to t('.logout'), session_path(Current.user.id), data: {
     turbo_method: :delete,
