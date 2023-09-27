@@ -5,7 +5,7 @@ class Product < ApplicationRecord
     description: 'B'
   }
 
-  ORDER_BY = order_by = {
+  ORDER_BY = {
     newest: 'created_at DESC',
     expensive: 'price DESC',
     cheapest: 'price ASC'
@@ -14,6 +14,8 @@ class Product < ApplicationRecord
 
   has_one_attached :photo
   validates :title, :description, :price, presence: true
+
+  has_many :favorites, dependent: :destroy
 
   belongs_to :category
   belongs_to :user, default: -> { Current.user }
