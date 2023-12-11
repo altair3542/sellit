@@ -1,5 +1,5 @@
 es:
-  app_name: 'Vendelo'
+  app_name: 'CollabHub Market'
   meta_title: 'Compra y vende productos de segunda mano'
   activerecord:
     models:

@@ -1,5 +1,5 @@
 en:
-  app_name: 'Sell It'
+  app_name: 'CollabHub Market'
   meta_title: 'Buy and sell second hand products'
   activerecord:
     models:
@@ -87,4 +87,3 @@ en:
   favorites:
     index:
       title: 'Favorites'
-
